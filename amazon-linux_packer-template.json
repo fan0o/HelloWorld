@@ -1,7 +1,7 @@
 {
     "variables": {
         "aws_region": "{{env `AWS_REGION`}}",
-        "aws_ami_name": "amazon-linux_{{isotime \"02Jan2006\"}}",
+        "aws_ami_name": "amazon-linux_{{isotime \"02Jan2006i15:05\"}}",
 	"aws_access_key": "{{ aws_secretsmanager `/ifinance/packer/awssecret` `aws_access_key` }}",
         "aws_secret_key": "{{ aws_secretsmanager `/ifinance/packer/awssecret` `aws_secret_key` }}"
     },
