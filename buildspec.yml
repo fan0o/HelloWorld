@@ -7,7 +7,7 @@ phases:
       - echo "Installing Ansible..."
       - apt update
       - apt upgrade -y
-      - apt install ansible
+      - apt install ansible -y
       - echo "Installing HashiCorp Packer..."
       - curl -qL -o packer.zip https://releases.hashicorp.com/packer/1.6.1/packer_1.6.1_linux_amd64.zip && unzip packer.zip
       - echo "Installing jq..."
