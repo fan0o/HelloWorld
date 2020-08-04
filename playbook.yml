@@ -3,6 +3,7 @@
 - name: 'Provision Image'
   hosts: default
   become: true
+  become_user: ubuntu
   vars:
     ansible_python_interpreter: /usr/bin/python3
 
