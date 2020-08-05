@@ -30,7 +30,7 @@
 	  {
     "type": "shell",
     "inline": [
-      "sleep 10",
+      "sleep 5",
       "sudo rm /var/lib/dpkg/lock-frontend"
     ]
 	  },
