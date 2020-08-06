@@ -31,7 +31,7 @@
     "type": "shell",
     "inline": [
       "sleep 5",
-      "cd $CODEBUILD_SRC_DIR_StagingConfig"
+      "cd $CODEBUILD_SRC_DIR_StagingConfig",
       "ls -la"
     ]
 	  },
