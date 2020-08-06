@@ -1,7 +1,7 @@
 {
   "variables": {
    "aws_region": "{{env `AWS_REGION`}}",
-   "playbook_path": "{{env `CODEBUILD_SRC_DIR_StagingConfig`}}",
+   "playbook_path": "{{env `CODEBUILD_SRC_DIR_StagingConfig`/playbook.yml}}",
    "aws_ami_name": "amazon-linux_{{isotime \"02Jan20061505\"}}",
    "aws_access_key": "{{ aws_secretsmanager `/ifinance/packer/awssecret` `aws_access_key` }}",
    "aws_secret_key": "{{ aws_secretsmanager `/ifinance/packer/awssecret` `aws_secret_key` }}"
@@ -36,7 +36,7 @@
 	  },
     {
       "type": "ansible",
-      "playbook_file": "{{user `playbook_path`/playbook.yml}}"
+      "playbook_file": "{{user `playbook_path`}}"
     }
   ]
 }
