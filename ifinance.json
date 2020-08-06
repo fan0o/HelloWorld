@@ -30,14 +30,12 @@
 	  {
     "type": "shell",
     "inline": [
-      "sleep 5",
-      "cd $CODEBUILD_SRC_DIR_StagingConfig",
-      "ls -la"
+      "sleep 5"
     ]
 	  },
     {
       "type": "ansible",
-      "playbook_file": "./playbook.yml"
+      "playbook_file": "../../../git-codecommit.ca-central-1.amazonaws.com/v1/repos/configuration/playbook.yml"
     }
   ]
 }
