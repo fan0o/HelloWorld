@@ -36,11 +36,7 @@
 	  },
     {
       "type": "ansible",
-<<<<<<< HEAD
       "playbook_file": "{{user `playbook_path`/playbook.yml}}"
-=======
-      "playbook_file": "../../../git-codecommit.ca-central-1.amazonaws.com/v1/repos/configuration/playbook.yml"
->>>>>>> cfefdc603ae54d7c3a24ffe1fe38427d96c1152c
     }
   ]
 }
